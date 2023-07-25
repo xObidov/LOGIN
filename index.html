@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stayle.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main-container container"> 
+            <div class="left"></div>
+            <div class="right">
+                <div class="right">
+                    <div class="right-container">
+                        <div class="login-intro">
+                            <p class="login-intro-text">Welcome back</p>
+                            <h1 class="login-intro-title">Login to your account</h1>
+                        </div>
+                        <form 
+                         class="global-form"
+                         action="https://echo.htmlacademy.ru" 
+                         method="GET">
+                        <div class="lable-input-wrapper">
+                            <label class="lable" for="email">Email</label>
+                            <input 
+                               class="input"
+                               id="email" 
+                               type="email" 
+                               placeholder="John.snow@gmail.com" 
+                               name="Email" 
+                               required
+                            />
+                        </div>
+                        <div class="lable-input-wrapper">
+                            <label class="lable" for="password">Passwor</label>
+                            <input 
+                               class="input"
+                               id="password" 
+                               type="password" 
+                               placeholder="*********" 
+                               name="password" 
+                               required
+                            />
+                        </div>
+                        <div class="option-wrapper">
+                            <div>
+                                <input id="remember-me" type="checkbox" value="Remember"/>
+                                <label class="remember" for="remember-me">Remember me</label>
+                            </div>
+                            <a class="option-link" href="#">Forgot password?</a>
+                        </div>
+                        <div class="buttons-wrapper">
+                            <button class="green-btn btn" href="">login now</button>
+                            <button class="dark-btn btn" href=""> 
+                            <img class="btn-icon" src="./img/google.svg.svg" alt="" width="20" height="20">
+                             <span>Or sign-in with google</span></button>
+                        </div>
+                        </form>
+                        <p class="join-text">
+                            Dont have an account? 
+                            <a class="loin-link" href="">Join free today</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+ul,
+ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 16px;
+    color: #1A202C;
+    height: 100%;
+}
+.main{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1540px;
+    padding-left: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.btn {
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    color: #ffff;
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-family: inherit;
+}
+.btn:active{
+    opacity: 1;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.main-container{
+    display: flex;
+    height: 100%;
+}
+.left{
+    width: 100%;
+    background-image: url(../img/image\ 1.png);
+    background-position: center;
+    background-size: cover;
+  
+
+}
+.right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.right-container {
+}
+.global-form{
+    margin-bottom: 162px;
+}
+.login-intro {
+}
+.login-intro-text {
+    margin-bottom: 2px;
+    margin-bottom: 10px;
+}
+.login-intro-title {
+    margin-bottom: 24px;
+}
+.lable-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+}
+.lable-input-wrapper:not(:first-child){
+    margin-bottom: 11px;
+}
+.lable-input-wrapper:nth-of-type(2){
+    margin-bottom: 28px;
+}
+
+.lable{
+    color: #4a5568;
+    margin-top: 10px;
+}
+.input{
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3748;
+    font-family: inherit;
+    padding: 17px 20px;
+    border: solid 1px #E5E5E5;
+    border-radius: 5px;
+    
+}
+.option-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.option-link {
+    color: #2c5282;
+    font-size: 14px;
+}
+.buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.green-btn {
+    background-color: #04C45C ;
+}
+.btn:not(:last-child){
+    margin-bottom: 15px;
+}
+
+
+.dark-btn {
+    background-color: #2D3748;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.btn-icon {
+    margin-right: 11px;
+}
+.join-text {
+    text-align: center;
+}
+.loin-link {
+}
+/* ---------------------------------------------------MEDIA----------------------------------------------------------------------- */
+@media(max-width:970px){
+    .main-container{
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/image\ 1.png);
+        background-position: center;
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        /* margin-top: 110px; */
+    }
+    .global-form {
+        margin-bottom: 0;
+    }
+    .container{
+        padding-left: 0;
+    }
+    .login-intro{
+        margin-top: 155px;
+    }
+    .login-intro-title{
+        text-align: center;
+    }
+    .login-intro-text{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .remember{
+        color: white;
+    }
+    .option-link{
+        color: rgb(207, 205, 223);
+    }
+    .loin-link{
+        color: #ffff;
+    }
+    .join-text{
+        color: #ffff;
+        margin-bottom: 33px;
+        margin-top: 120px;
+    }
+    .lable{
+        color: #40454d;
+    }
+
+
+}
+@media(max-width:485px){
+    .global-form{
+        padding: 10px 15px;
+    }
+    .dark-btn{
+        font-size: 11px;
+    }
+    
+}
